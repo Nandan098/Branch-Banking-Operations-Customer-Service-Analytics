@@ -1,0 +1,2 @@
+total_requests,branches,cities,avg_wait_min,avg_tat_min,sla_compliance_pct,rework_rate_pct,escalation_rate_pct,product_inquiry_pct,follow_up_rate_pct
+100000,60,10,14.56,28.6,72.69,4.39,3.09,11.46,6.96

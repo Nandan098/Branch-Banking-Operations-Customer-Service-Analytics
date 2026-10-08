@@ -1,0 +1,25 @@
+Column,Type,Definition,Business Use
+Request_ID,TEXT,Unique service request identifier,Primary analysis key
+Date,DATE,Date of customer interaction,Trend analysis
+Day_of_Week,TEXT,Day derived from Date,Day-pattern analysis
+Branch_ID,TEXT,Branch identifier,Branch benchmarking
+City,TEXT,City where the branch operates,Geographic comparison
+Branch_Type,TEXT,Branch footfall classification,Peer comparison
+Customer_Type,TEXT,Customer relationship/onboarding category,Customer service comparison
+Service_Type,TEXT,Type of banking service requested,Process analysis
+Channel,TEXT,Primary service channel,Channel comparison
+Hour,INTEGER,Hour block of interaction,Peak-hour analysis
+Staff_Available,INTEGER,Available staff during the interaction period,Capacity/workload analysis
+Customer_Footfall,INTEGER,Estimated branch footfall in the hour,Demand analysis
+Queue_Length_At_Arrival,INTEGER,Queue length at request arrival,Queue analysis
+Waiting_Time_Min,INTEGER,Minutes before service started,Customer experience KPI
+Service_Time_Min,REAL,Minutes spent processing the request,Process efficiency KPI
+TAT_Min,INTEGER,"Turnaround time; includes waiting, service and modeled rework delay",SLA analysis
+SLA_Target_Min,INTEGER,Expected service completion target,SLA analysis
+SLA_Status,TEXT,Met/Breached status based on TAT vs SLA target,Service quality
+Documentation_Issue,BOOLEAN,Whether a documentation/process issue occurred,Control quality
+Rework_Required,BOOLEAN,Whether the request required repeat processing,Process quality
+Escalation,BOOLEAN,Whether the request required escalation,Customer issue severity
+Product_Inquiry,BOOLEAN,Whether a product/business inquiry occurred,Relationship opportunity
+Existing_Product_Count,INTEGER,Approximate number of products held,Relationship depth
+Follow_Up_Required,BOOLEAN,Whether additional staff/customer follow-up was needed,Pipeline / service continuity

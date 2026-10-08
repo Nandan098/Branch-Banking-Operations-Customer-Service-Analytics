@@ -1,0 +1,23 @@
+-- Assume the table is named BranchOps in Power BI.
+Total Requests = COUNTROWS(BranchOps)
+Average Waiting Time = AVERAGE(BranchOps[Waiting_Time_Min])
+Average TAT = AVERAGE(BranchOps[TAT_Min])
+Average Service Time = AVERAGE(BranchOps[Service_Time_Min])
+SLA Compliance % = DIVIDE(CALCULATE(COUNTROWS(BranchOps), BranchOps[SLA_Status] = "Met"), [Total Requests])
+SLA Breach % = 1 - [SLA Compliance %]
+Rework Rate % = DIVIDE(CALCULATE(COUNTROWS(BranchOps), BranchOps[Rework_Required] = TRUE()), [Total Requests])
+Escalation Rate % = DIVIDE(CALCULATE(COUNTROWS(BranchOps), BranchOps[Escalation] = TRUE()), [Total Requests])
+Product Inquiry % = DIVIDE(CALCULATE(COUNTROWS(BranchOps), BranchOps[Product_Inquiry] = TRUE()), [Total Requests])
+Follow Up Rate % = DIVIDE(CALCULATE(COUNTROWS(BranchOps), BranchOps[Follow_Up_Required] = TRUE()), [Total Requests])
+Average Queue Length = AVERAGE(BranchOps[Queue_Length_At_Arrival])
+Average Footfall = AVERAGE(BranchOps[Customer_Footfall])
+Average Staff Available = AVERAGE(BranchOps[Staff_Available])
+Workload per Staff = DIVIDE(AVERAGE(BranchOps[Customer_Footfall]), AVERAGE(BranchOps[Staff_Available]))
+Branches Served = DISTINCTCOUNT(BranchOps[Branch_ID])
+Customers / Requests per Branch = DIVIDE([Total Requests], [Branches Served])
+High Value Follow Ups = CALCULATE([Total Requests], BranchOps[Follow_Up_Required] = TRUE(), BranchOps[Existing_Product_Count] >= 2)
+
+-- Optional calculated columns
+Workload_per_Staff = DIVIDE(BranchOps[Customer_Footfall], BranchOps[Staff_Available])
+Peak_Hour_Flag = IF(BranchOps[Hour] IN {11,12,13}, "Peak", "Non-Peak")
+Wait_Band = SWITCH(TRUE(), BranchOps[Waiting_Time_Min] < 5, "<5 min", BranchOps[Waiting_Time_Min] < 10, "5-9 min", BranchOps[Waiting_Time_Min] < 20, "10-19 min", BranchOps[Waiting_Time_Min] < 30, "20-29 min", BranchOps[Waiting_Time_Min] < 60, "30-59 min", "60+ min")

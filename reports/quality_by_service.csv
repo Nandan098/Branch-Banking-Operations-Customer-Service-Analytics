@@ -1,0 +1,11 @@
+Service_Type,requests,documentation_issue_pct,rework_pct,escalation_pct,follow_up_pct
+KYC Update,10858,12.78,10.57,2.46,6.35
+Account Opening,10173,10.44,8.84,2.81,11.21
+Loan Inquiry,7135,7.34,6.69,2.27,10.83
+Card Service,10044,6.02,5.48,2.18,11.17
+Complaint,3924,4.89,5.33,11.8,7.21
+Other Service,4889,2.86,3.6,2.62,4.79
+Fund Transfer,7995,3.2,2.98,2.83,5.15
+Cash Withdrawal,14914,1.41,1.78,2.89,5.45
+Cash Deposit,19088,1.48,1.59,2.67,4.94
+Statement/Passbook,10980,1.07,1.15,3.65,5.04

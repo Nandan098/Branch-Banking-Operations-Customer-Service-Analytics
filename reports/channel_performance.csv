@@ -1,0 +1,4 @@
+Channel,requests,avg_wait_min,avg_tat_min,sla_compliance_pct
+Branch Counter,74316,14.63,27.99,72.17
+Assisted Digital,20853,14.49,30.75,74.3
+Other,4831,13.79,28.87,73.81

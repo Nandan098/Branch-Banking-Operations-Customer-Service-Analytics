@@ -1,0 +1,16 @@
+Branch_ID,City,Branch_Type,requests,avg_wait,avg_tat,sla_pct,rework_pct,avg_workload_per_staff
+B100,Indore,High Footfall,2672,66.51,80.36,20.17,4.3,22.59
+B117,Bhopal,High Footfall,1007,61.62,75.43,21.75,3.77,21.94
+B122,Indore,High Footfall,701,38.01,52.85,30.53,4.56,17.86
+B157,Bhopal,High Footfall,1436,38.26,52.41,34.05,4.39,17.67
+B104,Bengaluru,High Footfall,384,36.34,50.32,35.42,5.47,17.19
+B144,Ahmedabad,Standard,1484,31.69,45.43,37.67,4.85,16.36
+B106,Jaipur,Standard,3028,31.46,45.23,38.44,3.96,16.31
+B103,Lucknow,Standard,911,29.68,43.9,39.08,4.28,15.98
+B115,Nagpur,Standard,397,28.46,42.44,39.8,5.29,15.73
+B142,Indore,Standard,1750,31.23,45.48,40.91,4.63,16.14
+B151,Bhopal,Standard,908,29.82,43.98,41.52,3.74,15.78
+B128,Mumbai,High Footfall,1117,25.39,39.19,48.43,4.57,14.64
+B137,Hyderabad,Standard,1672,18.03,32.28,57.89,4.67,12.84
+B114,Jaipur,High Footfall,694,17.87,31.55,58.07,3.75,12.61
+B120,Pune,High Footfall,4235,18.2,32.04,58.63,4.13,12.69

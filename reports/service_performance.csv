@@ -1,0 +1,11 @@
+Service_Type,requests,avg_wait_min,avg_service_min,avg_tat_min,sla_compliance_pct,rework_pct,documentation_issue_pct
+Cash Deposit,19088,14.43,8.02,22.69,68.44,1.59,1.48
+Cash Withdrawal,14914,14.62,7.06,21.95,70.82,1.78,1.41
+Statement/Passbook,10980,14.55,6.06,20.78,58.1,1.15,1.07
+KYC Update,10858,14.36,17.96,33.91,79.06,10.57,12.78
+Account Opening,10173,14.55,24.88,40.78,75.26,8.84,10.44
+Card Service,10044,14.61,14.96,30.4,79.28,5.48,6.02
+Fund Transfer,7995,15.36,10.07,25.85,72.57,2.98,3.2
+Loan Inquiry,7135,14.49,26.95,42.44,79.55,6.69,7.34
+Other Service,4889,14.35,12.92,27.79,76.15,3.6,2.86
+Complaint,3924,14.3,20.11,35.21,83.74,5.33,4.89
